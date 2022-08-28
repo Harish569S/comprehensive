@@ -1,0 +1,36 @@
+
+<div class="col-md-7 offset-md-1">
+    <div class="form-group">
+        <label for="state">
+            <h3>Select the doctor name from the list</h3>
+        </label>
+        <br>
+        <select [(ngModel)]="doctor.docName" (ngModelChange)="OnChange($event)" name="DoctorName" class="myClass">
+            <option value=''>---- Select Doctor----</option>
+            <option *ngFor="let doctor of doctors" [value]="doctor.docName" class="dropdown-item">
+                {{doctor.docName}}</option>
+        </select>
+    </div>
+
+    <br>
+    <div *ngIf="doctor.docName" id="id">
+        <h4>Doctor Details</h4>
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th> Name:</th>
+                    <th>Specialist In:</th>
+                    <th>No Of Patients Attended: </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> {{ doctor.docName }} </td>
+                    <td> {{ doctor.specialistIn }} </td>
+                    <td> {{ doctor.noOfPatients }} </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

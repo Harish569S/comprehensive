@@ -1,0 +1,77 @@
+<div class="col-md-8 offset-md-3" id="formm">
+
+  <h1 class="text-center">Patient Registration Form</h1>
+  <br>
+
+  <form (ngSubmit)="onSubmit()" ngNativeValidate>
+
+    <div class="form-group">
+      <label for="name">
+        <h5>Name:</h5>
+      </label>
+
+      <input type="text" class="form-control" required [(ngModel)]="patient.patientName" name="PatientName" id="name"
+        placeholder="Enter patient name">
+    </div>
+    <br>
+
+    <div class="form-group">
+      <label for="age">
+        <h5>Age:</h5>
+      </label>
+      <input type="number" class="form-control" required [(ngModel)]="patient.age" name="Patientage" id="age"
+        placeholder="Enter patient age" min=0 max="100">
+    </div>
+    <br>
+
+    <div class="form-group">
+      <label for="doc">
+        <h5>Visited Doctor:</h5>
+      </label>
+      <br>
+      <select [(ngModel)]="patient.visitedDoctor" name="Doctor Visited" class="myClass" id="doc" required>
+        <option value=''>---- Select ----</option>
+        <option *ngFor="let doctor of doctors" [value]="doctor.docName" class="dropdown-item">
+          {{doctor.docName}}</option>
+      </select>
+    </div>
+    <br>
+
+    <div class="form-group">
+      <label for="date">
+        <h5>Date Of Visit:</h5>
+      </label>
+      <input type="date" class="form-control" required [(ngModel)]="patient.dateOfVisit" name="date" id="date">
+    </div>
+    <br>
+
+    <div class="form-group">
+      <div class="text-center">
+        <button class="btn btn-success" type="submit">Register</button>
+      </div>
+    </div>
+
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

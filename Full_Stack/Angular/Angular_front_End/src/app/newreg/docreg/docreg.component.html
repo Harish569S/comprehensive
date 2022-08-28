@@ -1,0 +1,75 @@
+<div class="col-md-3 offset-md-3" id="formm">
+    <h1 class="text-center">Doctor Registration Form</h1>
+
+    <br>
+    <form (ngSubmit)="onSubmit()" ngNativeValidate>
+
+
+        <div class="form-group">
+            <label for="name">
+                <h5>Name:</h5>
+            </label>
+
+            <input type="text" class="form-control" required [(ngModel)]="doctor.docName" name="docName" id="name"
+                placeholder="Enter doctor name">
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="age">
+                <h5>Age:</h5>
+            </label>
+            <input type="number" class="form-control" required [(ngModel)]="doctor.docAge" name="age" id="age"
+                placeholder="Enter doctor age" min=26 max="55">
+        </div>
+        <br>
+
+
+
+        <div class="form-group">
+            <h5>Gender:</h5>
+
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="Radios1"> Male</label>
+                <input class="form-check-input" required [(ngModel)]="doctor.gender" type="radio" name="radio"
+                    id="Radios1" value="Male" [checked]='true'>
+
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="Radios2"> Female</label>
+                <input class="form-check-input" required [(ngModel)]="doctor.gender" type="radio" name="radio"
+                    id="Radios2" value="Female" checked>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="Radios3"> Others</label>
+                <input class="form-check-input" required [(ngModel)]="doctor.gender" type="radio" name="radio"
+                    id="Radios3" value="Others" checked>
+            </div>
+        </div>
+
+
+
+        <br>
+        <div class="form-group">
+            <label for="spec">
+                <h5>Specialist In:</h5>
+            </label>
+            <br>
+            <select [(ngModel)]="doctor.specialistIn" (ngModelChange)="OnChange($event)" name="Specialization"
+                class="myClass" id="spec" required>
+                <option value=''>-- Select an Option --</option>
+                <option *ngFor="let speciality of specialities" [value]="speciality" class="dropdown-item">
+                    {{speciality}}</option>
+            </select>
+
+        </div>
+
+        <br>
+        <div class="form-group">
+            <div class="text-center">
+                <button class="btn btn-success" type="submit">Register</button>
+            </div>
+        </div>
+    </form>
+</div>

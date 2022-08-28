@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+h3{
+    color: rgb(233, 16, 16);
+}
+
+  body {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image:url(app/hospital.jpg) ;
+      }
+
+      #formm{
+        border: 1px solid black;
+        padding:20px;
+        width: 50%;
+         background-color: #eff0f1;
+         margin-top: 10px;
+    }

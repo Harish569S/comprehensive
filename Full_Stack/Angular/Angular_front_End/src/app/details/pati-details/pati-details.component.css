@@ -1,0 +1,13 @@
+input{
+    width:50%
+
+}
+.container{
+    background-color: cornsilk;
+    text-align: center;
+    transform-box: unset;
+}
+img{
+    width: 200px;
+    height: 200px;
+}

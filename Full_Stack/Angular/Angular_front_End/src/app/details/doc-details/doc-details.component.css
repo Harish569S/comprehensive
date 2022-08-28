@@ -1,0 +1,9 @@
+select{
+    padding: 8px;
+    border-radius: 3px;
+}
+#id{
+    background-color: deepskyblue;
+    text-align: center;
+    
+}
