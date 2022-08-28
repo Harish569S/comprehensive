@@ -15,6 +15,7 @@ public class PatientMsApplication {
 		SpringApplication.run(PatientMsApplication.class, args);
 	}
 	
+	
 	@Bean
 	@LoadBalanced
 	RestTemplate restTemp() {

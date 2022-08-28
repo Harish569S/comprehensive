@@ -14,7 +14,6 @@ public class DocterMsApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DocterMsApplication.class, args);
 	}
-	
 	@Bean
 	@LoadBalanced
 	RestTemplate restTemp() {
