@@ -1,14 +1,13 @@
 
-<div class="col-md-7 offset-md-1">
+<div class="col-md-7 offset-md-1" style="margin: 30px;">
   <div>
-  <label for="id">
+  <label >
     <h3>Enter patient id</h3>
   </label>
-  <br>
   <input type="number" class="form-control" required [(ngModel)]="patient.id" name="PatientId" id="id"
     placeholder="Enter Your Id" (ngModelChange)="onChange($event)">
   </div>
-    
+  <br>
   <div class="container" *ngIf="patient.id" >
    
     <h2>Patient Details</h2>
@@ -39,7 +38,7 @@
   </div>
   </div>
   
-  <div> <br>
+  <div> 
     <button (click)="toHome() " type="submit" class="btn btn-primary">Go To Home</button>
   </div>
   </div>

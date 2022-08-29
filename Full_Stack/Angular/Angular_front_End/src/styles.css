@@ -6,8 +6,8 @@ h3{
 }
 
   body {
-      background-position: center;
-      background-repeat: no-repeat;
+      /* background-position: center; */
+      
       background-size: cover;
       background-image:url(app/hospital.jpg) ;
       margin-top: 10px;

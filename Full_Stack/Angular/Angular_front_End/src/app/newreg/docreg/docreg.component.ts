@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+
 import { Component, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
 import { DoctorModel } from 'src/app/model/doctor-model';
