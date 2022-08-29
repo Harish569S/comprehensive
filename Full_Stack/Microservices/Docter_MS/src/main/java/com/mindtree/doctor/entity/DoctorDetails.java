@@ -31,7 +31,7 @@ public class DoctorDetails {
 
 
 
-	public DoctorDetails(String docName, int docAge, String specialistIn,String gender, int noOfPatients) {
+	public DoctorDetails(String docName, int docAge, String specialistIn,String gender ,int noOfPatients) {
 		super();
 		this.docName = docName;
 		this.docAge = docAge;

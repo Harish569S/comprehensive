@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { DoctorModel } from 'src/app/model/doctor-model';
 import { DoctorService } from 'src/app/services/doctor.service';
 
@@ -14,7 +15,7 @@ export class DocDetailsComponent implements OnInit {
   tempId: string;
 
   ;
-  constructor(private doctorService: DoctorService) {
+  constructor(private doctorService: DoctorService,private router:Router) {
   }
 
   ngOnInit(): void {
@@ -36,6 +37,9 @@ export class DocDetailsComponent implements OnInit {
     }
   }
 
+  toHome(){
+    this.router.navigate(['/home'])
+  }
 
 
 }

@@ -23,7 +23,7 @@ export class DocregComponent implements OnInit {
   }
 
 onSubmit(){
-  this.doctor.docName="Dr."+this.doctor.docName
+  this.doctor.docName="Dr."+this.doctor.docName;
   this.doctorService.createDoctor(this.doctor).subscribe(response=>{
     console.log(response);
     alert("Your Registration was successfull "+response.docName);
@@ -39,6 +39,11 @@ gotoView(){
 
 OnChange(str:string){
   console.log(str);
+}
+
+
+toHome(){
+  this.router.navigate(['/home'])
 }
 
 }

@@ -42,7 +42,9 @@ export class PatiregComponent implements OnInit {
   gotoPatientList() {
     this.router.navigate(['/patient-details']);
   }
-
+  toHome(){
+    this.router.navigate(['/home'])
+  }
 }
 
 

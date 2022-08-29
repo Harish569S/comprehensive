@@ -10,6 +10,7 @@ h3{
       background-repeat: no-repeat;
       background-size: cover;
       background-image:url(app/hospital.jpg) ;
+      margin-top: 10px;
       }
 
       #formm{
@@ -17,5 +18,5 @@ h3{
         padding:20px;
         width: 50%;
          background-color: #eff0f1;
-         margin-top: 10px;
+       
     }

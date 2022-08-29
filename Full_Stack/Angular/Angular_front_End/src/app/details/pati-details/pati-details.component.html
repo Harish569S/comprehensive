@@ -1,15 +1,16 @@
+
 <div class="col-md-7 offset-md-1">
+  <div>
   <label for="id">
     <h3>Enter patient id</h3>
   </label>
   <br>
   <input type="number" class="form-control" required [(ngModel)]="patient.id" name="PatientId" id="id"
     placeholder="Enter Your Id" (ngModelChange)="onChange($event)">
-
-  <br>
-
+  </div>
+    
   <div class="container" *ngIf="patient.id" >
-
+   
     <h2>Patient Details</h2>
 
     <div>
@@ -30,8 +31,15 @@
     <div>
       <label><b> Prescription:</b></label>
       <br>
+      <div >
       <img
         src="data:image/jpeg;base64,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"
         alt="prescription" class="img-responsive">
     </div>
+  </div>
+  </div>
+  
+  <div> <br>
+    <button (click)="toHome() " type="submit" class="btn btn-primary">Go To Home</button>
+  </div>
   </div>

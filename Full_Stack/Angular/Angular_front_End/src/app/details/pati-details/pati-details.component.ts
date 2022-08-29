@@ -62,5 +62,8 @@ notPresent:boolean;
    
   }
 
+  toHome(){
+    this.router.navigate(['/home'])
+  }
 
 }
