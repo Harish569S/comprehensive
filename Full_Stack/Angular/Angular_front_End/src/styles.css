@@ -5,9 +5,7 @@ h3{
     color: rgb(233, 16, 16);
 }
 
-  body {
-      /* background-position: center; */
-      
+  body{
       background-size: cover;
       background-image:url(app/hospital.jpg) ;
       margin-top: 10px;

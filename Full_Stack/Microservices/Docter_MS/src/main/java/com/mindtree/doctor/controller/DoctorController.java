@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.mindtree.doctor.entity.DoctorDetails;
 import com.mindtree.doctor.service.DoctorService;
 
-//@CrossOrigin(origins="*")
+
 @RestController
 @RequestMapping("/doctor")
 public class DoctorController {
@@ -48,6 +48,9 @@ public class DoctorController {
 	}
 
 }
+
+
+
 
 //@GetMapping("/{id}")
 //public DoctorDetails getOneDoctor(@PathVariable int id){

@@ -35,9 +35,7 @@ spring:
                 - POST
                 - PUT
                 - DELETE
-           
-      
-
+        
 eureka:
   client:
     fetch-registry: true

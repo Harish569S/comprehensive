@@ -15,6 +15,5 @@ public interface DoctorRepository extends JpaRepository<DoctorDetails, Integer>{
 	@Query(value="select * from doctor where doc_name=:str",nativeQuery = true)
 	DoctorDetails getDetailsByName(@Param("str") String str);
 	
-	
 	DoctorDetails findById(int id);
 }

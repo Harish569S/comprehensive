@@ -14,14 +14,9 @@ const routes: Routes = [
   {path:'patient-details',component:PatiDetailsComponent},
   {path:'doctor-details',component:DocDetailsComponent},
   {path:'home',component:HomeComponent},
-  {path:'page-not-found/:id',component:PageNotFoundComponent,},
-  //{path:'view-employee/:id',component:ViewEmployeeComponent},
-
+  {path:'page-not-found/:id',component:PageNotFoundComponent},
   {path:'', redirectTo:'home',pathMatch:'full'  },
-  {path:'**', redirectTo:'home',pathMatch:'full' }
-
-
- 
+  {path:'**', redirectTo:'home',pathMatch:'full' },
 ];
 
 @NgModule({

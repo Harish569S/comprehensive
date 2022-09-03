@@ -4,7 +4,5 @@ export class DoctorModel {
     docAge:number;
     gender:string;
     specialistIn:string='';
-    noOfPatients:number;
-   
-  
+    noOfPatients:number; 
 }
